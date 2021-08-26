@@ -98,6 +98,11 @@ const getState = ({ getStore, getActions, setStore }) => {
  
 				
 			],
+			homeImage1: image13 ,
+			homeImage2: image2,
+			homeImage3: image1,
+			homeImage4: image12,
+			
 		
 			
 			

@@ -11,7 +11,22 @@
      
      
    }
-  
+   .card_images{
+    height: 200px;
+    border-radius: 7px;
+}
+
+  .btn{
+     color: #131313;
+   }
+   .hero_cont{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 50px;
+     padding-bottom: 200px;
+   }
+   
    .hero__container {
      display: flex;
      flex-direction: column;
@@ -44,13 +59,15 @@
        height: 70px;
    }
    .services_first{
-       color:#131313;
+       color:#fff;
    }
    .services{
        height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
+      margin-top: 20px;
    }
    .services__card{
    position: relative;
@@ -157,7 +174,7 @@
      flex-direction: column;
      justify-content: center;
      color: #fff;
-      background: #13131313;
+     
       margin-right: 5px;
    
     
