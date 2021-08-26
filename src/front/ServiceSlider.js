@@ -27,7 +27,7 @@ function ServiceSliders(sliders){
                 clearTimeout(timeout.currents)
             }
         }
-    },[currents, lengths]);
+    },[currents, lengths, sliders]);
     const prevSlide = ()=>{
         setCurrents(currents === 0  ? lengths  - 1 : currents - 1)
     }
