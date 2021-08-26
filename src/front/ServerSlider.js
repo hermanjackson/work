@@ -9,7 +9,7 @@ function ServeSliders(sliders){
     const [currents, setCurrents] = useState(0);
   
     const lengths = sliders.slides.length
-    const {store, actions}= useContext(Context);
+    const {store, }= useContext(Context);
     const timeout = useRef(null);
     const nextSlide = ()=>{
         setCurrents(currents === lengths - 1 ? 0 : currents + 1)

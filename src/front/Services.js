@@ -8,7 +8,7 @@ import "../styles/card.css"
 import { Context } from "./appContext";
         
 export const Services = () => {
-    const { store, actions } = useContext(Context);
+    const { store,  } = useContext(Context);
     return (
        
         

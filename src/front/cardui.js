@@ -4,7 +4,7 @@ import {Context} from "./appContext"
 
 
 const Card = props =>{
-    const { store, actions } = useContext(Context);
+    const { store,  } = useContext(Context);
     return(
         <div className="landing-container">
 				{store.allServices.map((item, index) => {
