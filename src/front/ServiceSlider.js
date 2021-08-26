@@ -8,7 +8,7 @@ import "../styles/serve.css"
 function ServiceSliders(sliders){
     const [currents, setCurrents] = useState(0);
   
-    const lengths = sliders.slides.length
+    const lengths = sliders.slides.lengths
     const {store, }= useContext(Context);
     const timeout = useRef(null);
     const nextSlide = ()=>{
@@ -27,7 +27,7 @@ function ServiceSliders(sliders){
                 clearTimeout(timeout.currents)
             }
         }
-    },[currents, lengths])
+    },[currents, lengths]);
     const prevSlide = ()=>{
         setCurrents(currents === 0  ? lengths  - 1 : currents - 1)
     }
@@ -36,7 +36,7 @@ function ServiceSliders(sliders){
     }
     return (
         <div className="slider">
-             <FaAngleDoubleLeft type="button" className="slider_left_btn" onClick={prevSlide}/ >
+             <FaAngleDoubleLeft type="button" className="slider_left_btn" onClick={prevSlide}/>
             < FaAngleDoubleRight  type="button" className="slider_btn" onClick={nextSlide}/>
              
         

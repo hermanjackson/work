@@ -150,11 +150,11 @@
   
   
   }
-  .card-btn{
+  .cards-button{
    position: absolute;
     top: 80%;
     right: 80px;
-    border-radius: 15px;
+    border-radius: 7px;
     height: 60px;
     width: 150px;
     background: #13131313;

@@ -1,4 +1,4 @@
-import React, {useContext,useState } from 'react'
+import React, {useContext } from 'react'
 import { Link,  } from "react-router-dom";
 import {Context} from "./appContext"
 
@@ -14,9 +14,9 @@ export const Home = () => {
                 <div className="hero__container">
                     <h1 className="hero__heading">Making Software at a safe and secure practice</h1>
                     <h1 className="hero__description">learn more</h1>
-					<Link to={"/services"}>
+					<Link to={"/Services"}>
                     <button className="main__btn">
-                        <a href="servives">search</a>
+                        <a href="Servives">search</a>
                     </button>
 					</Link>
                 </div>
@@ -35,7 +35,7 @@ export const Home = () => {
 							<h2 className="services_title">{item.label}</h2>
 							<img className="card_images" src={item.image} alt="" />
 							<Link to={"/services"} >
-							<button  href="/services" className="card-btn">learn More</button>
+							<button  alt="" className="cards-button">learn More</button>
 							</Link>
 						</div>
 					</div>
