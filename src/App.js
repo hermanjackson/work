@@ -2,12 +2,14 @@
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import  React from "react";
-import { Navbar } from './components/navbar';
+import { Navbars } from './components/navbar';
 import injectContext from './front/appContext';
-import { Home } from './front/home';
-import { Services } from './front/Services';
+import { Home } from './front/Home';
+import  Contact  from "../src/front/Contact.js";
 import { Breadcrumb } from "./components/breadCrumb";
-import SMSForm from "./front/smsForm";
+import{Footer} from "./components/inc/footer"
+import {About} from "../src/front/About.js"
+import {Shop} from "../src/front/Shop"
 import './App.css';
 
 function App() {
@@ -15,22 +17,26 @@ function App() {
     <div className="App">
      <BrowserRouter>
      <Breadcrumb/>   
-    <Navbar/>
+    <Navbars/>
       <Switch>
         <Route exact path="/">
           <Home/>
         </Route>
-        <Route exact path="/Services">
-          <Services/>
+        <Route exact path="/Contact">
+          <Contact/>
         </Route>
-        <Route exact path="/smsForm">
-          <SMSForm/>
+        <Route exact path="/About">
+          <About/>
+        </Route>
+        <Route exact path="/Shop">
+          <Shop/>
         </Route>
        
        
       
      
       </Switch>
+      <Footer/>
     </BrowserRouter>
       
     </div>

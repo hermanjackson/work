@@ -1,50 +1,33 @@
-import "../styles/nav.css"
 import React from 'react'
 import { Link } from "react-router-dom";
+import "../styles/nav.css"
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 
-export const Navbar = () => {
+
+export const Navbars = () => {
     return (
-        <div >
-              <nav className="navbar">
-			<div className="navbar__container">
-				<h1 href="#home" id="navbar__logo">
-                    <h1>logo</h1>
-				</h1>
-				<ul className="navbar__menu">
-					<Link to={"/Services"}>
-						<li className="navbar__item">
-							<span href="#Services" className="navbar__links" id="Services-page">
-								Services
-							</span>
-						</li>
-					</Link>
-					
-					
-					<Link to={"/"}>
-						<li className="navbar__item">
-							<span href="#home" className="navbar__links" id="home-page">
-								home
-							</span>
-						</li>
-						</Link>
-					
-						
-						
-					
-						<Link to={"/smsForm"}>
-						<li className="navbar__btn">
-							<span href="smsForm" className="button" id="contact">
-								Contact
-							</span>
-						</li>
-						</Link>
-					
-					
-				</ul>
-			</div>
-		</nav>
-            
-        </div>
+        <>
+  <Navbar bg="dark" variant="dark">
+    <Container>
+   
+    <Nav className="me-auto">
+      <Link to="/">
+      <Nav.Link href="#home">Home</Nav.Link>
+      </Link>
+      <Link to="/About">
+      <Nav.Link href="#About">About</Nav.Link>
+      </Link>
+      <Link to="/Contact">
+      <Nav.Link href="#Contact">Contact</Nav.Link>
+      </Link>
+      <Link to="/Shop">
+      <Nav.Link href="#Shop">Supplements</Nav.Link>
+      </Link>
+    </Nav>
+    </Container>
+  </Navbar>
+  
+</>
     )
 }
