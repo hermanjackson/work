@@ -1,10 +1,10 @@
 import React , {useContext} from 'react'
 import {Context} from "./appContext"
-import { Link  } from "react-router-dom";
+
 import "../styles/cards.css"
 
 export const Shop = () => {
-    const { store, actions } = useContext(Context);
+    const { store,  } = useContext(Context);
     return (
         <div>
             <section className="section bg-c-light border-top">

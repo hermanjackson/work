@@ -117,8 +117,8 @@ class Contact extends Component{
                     <h5 className="main-heading">Address Information</h5>
                     <div className="underline"></div>
                     <p>West Palm Beach</p>
-                    <p>phone:561</p>
-                    <p>email:whatever@gmail.com</p>
+                    <p>phone: 561-351-7323</p>
+                    <p>email:letsbuildtech@gmail.com</p>
 
                 </div>
 
